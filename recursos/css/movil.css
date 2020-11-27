@@ -19,7 +19,8 @@
 	body{
 		width:100%;
 		background-color:#FFFFFF;
-		background-image:url("../imagenes/sbg.jpg");
+		background-image:url("../imagenes/bgs.png");
+		background-size:repeat;
 	}
 	
 	header nav ul li{
@@ -37,7 +38,7 @@
 	.menu_bar .bt-menu{
 		display:block;
 		padding:15px;
-		background-color:#510026;
+		background-color:#000000;
 		color:#FFFFFF;
 		text-decoration:none;
 		font-weight: bold;
