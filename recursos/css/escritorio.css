@@ -1,0 +1,126 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+@font-face{
+	font-family:titulos1;
+	src:url("../fuentes/propiacav.ttf");
+}
+
+.menu_bar, .movil{
+	display:none;
+}
+
+nav a, h1, footer, aside{
+	font-family:titulos1;
+}
+
+div.escritorio{
+	padding:10px 0px;
+	margin:auto;
+	text-align:center;
+}
+
+div.contenido{
+	background: rgba(255,255,255,.8); 
+}
+
+body{
+	background:#000000;
+	width:90%;
+	margin:auto;
+	background-image:url("../imagenes/bg.png");
+	background-size:repeat;
+}
+
+header{
+	width:100%;
+}
+
+header nav{
+	width:100%;
+	background:#000000;
+}
+
+header nav ul{
+	overflow:hidden;
+	list-style:none;
+}
+
+header nav ul li{
+	float:left;
+	border-right:solid 1px #FFFFFF;
+}
+
+header nav ul li a{
+	color:#fff;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+
+header nav ul li span{
+	margin-right:10px;
+}
+
+header nav ul li a:hover{
+	background:#C55A07;
+}
+
+div.cuerpo{
+	padding:10px;
+}
+
+section h1{
+	text-align:center;
+	margin-bottom:10px;
+}
+
+section img{
+	display:block;
+	margin:auto;
+	margin-bottom:10px;
+}
+
+article{
+	border-radius: 10px;
+	background-color:#FFFFFF;
+	padding:15px;
+}
+
+aside{
+	text-align:center;
+	border-radius: 10px;
+	background-color:#000000;
+	padding:15px;
+	color:#FFFFFF;
+}
+
+article{
+	width:85%;
+}
+
+aside{
+	width:10%;
+	float:right;
+}
+
+#seleccion{
+	color:#FFAC11;
+}
+
+div.separador{
+	margin-top:10px;
+}
+
+iframe{
+	width:100%;
+}
+
+footer{
+	padding:5px;
+	text-align:center;
+	color:#FFFFFF;
+	background-color:#000000;
+}
