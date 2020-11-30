@@ -12,7 +12,7 @@
 	display:none;
 }
 
-nav a, h1, footer, aside{
+nav a, h1, h2, footer, aside{
 	font-family:titulos1;
 }
 
@@ -23,7 +23,7 @@ div.escritorio{
 }
 
 div.contenido{
-	background: rgba(255,255,255,.8); 
+	background: rgba(255,255,255,.2); 
 }
 
 body{
@@ -38,24 +38,37 @@ header{
 	width:100%;
 }
 
+header h1{
+	text-shadow: 1px 1px 5px #fff;
+}
+
+nav{
+	border-radius: 10px 10px 0px 0px;
+	text-align: center;
+}
+
 header nav{
 	width:100%;
 	background:#000000;
+	text-transform: uppercase;
+	box-shadow: 0px 3px #757575;
 }
 
 header nav ul{
 	overflow:hidden;
 	list-style:none;
+	display:inline-block;
 }
 
 header nav ul li{
 	float:left;
-	border-right:solid 1px #FFFFFF;
+	border-bottom:solid 1px #FFFFFF;
+	margin-left:10px;
 }
 
 header nav ul li a{
 	color:#fff;
-	padding:20px;
+	padding:15px;
 	display:block;
 	text-decoration:none;
 }
@@ -72,8 +85,7 @@ div.cuerpo{
 	padding:10px;
 }
 
-section h1{
-	text-align:center;
+section h1, section h2{
 	margin-bottom:10px;
 }
 
@@ -86,7 +98,34 @@ section img{
 article{
 	border-radius: 10px;
 	background-color:#FFFFFF;
-	padding:15px;
+	padding:10px;
+	border: 1px solid #ddd;
+}
+
+p{
+	font-size:20px;
+}
+
+section h2{
+	text-align:center;
+	border-radius: 10px;
+	background-color:#FFF;
+	color:#000;
+	padding:10px;
+	border: 1px solid #ddd;
+	width:85%;
+	text-transform: uppercase;
+	box-shadow: 0px 3px #757575;
+}
+
+h2, h3{
+	font-size:25px;
+}
+
+article h3{
+	border-bottom: 1px solid #ddd;
+	margin-bottom:7px;
+	padding:5px;
 }
 
 aside{
@@ -97,16 +136,27 @@ aside{
 	color:#FFFFFF;
 }
 
+aside h3{
+	margin-bottom:10px;
+}
+
 article{
 	width:85%;
+	box-shadow: 0px 3px #757575;
+	text-align: justify;
 }
 
 aside{
-	width:10%;
+	width:11%;
 	float:right;
+	box-shadow: 0px 3px #757575;
 }
 
 #seleccion{
+	border-bottom:solid 1px #FFAC11;
+}
+
+#seleccion a{
 	color:#FFAC11;
 }
 
@@ -122,5 +172,40 @@ footer{
 	padding:5px;
 	text-align:center;
 	color:#FFFFFF;
-	background-color:#000000;
+	background-color: #000000;
+	box-shadow: 0px 3px #757575;
+	border-radius: 0px 0px 10px 10px;
 }
+
+.margen_superior{
+	margin-top:10px;
+}
+
+.fecha{
+	text-align:center;
+}
+
+table{
+	margin-top:10px;
+	width:100%;
+}
+
+table th{
+	background-color:#FEBC57;
+	color:#000;
+}
+
+table, th, td {
+	font-size:20px;
+	padding:5px;
+	border: 2px solid #757575;
+	border-collapse: collapse;
+}
+
+tr:hover{
+	background-color:#FFF59D;
+	font-weight: bold;
+}
+
+
+

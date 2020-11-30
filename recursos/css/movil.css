@@ -29,6 +29,23 @@
 		border-bottom:1px solid rgba(255,255,255, .3);
 	}
 	
+	nav{
+		text-align: left;
+	}
+	
+	header nav ul{
+		display:block;
+	}
+	
+	header nav ul li{
+		border-bottom:solid 1px #424242;
+		margin-left:0px;
+	}
+	
+	header nav ul li a{
+		padding:20px;
+	}
+	
 	.menu_bar{
 		display:block;
 		width:100%;
@@ -68,6 +85,10 @@
 	
 	article{
 		margin:auto;
+		width:96%;
+	}
+	
+	section h2{
 		width:96%;
 	}
 }
