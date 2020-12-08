@@ -1,0 +1,214 @@
+/* ------------------------------------------------------
+				Estilos CSS Generico
+------------------------------------------------------ */
+
+/* ################# Propiedades CSS ################# */
+:root{
+	--color-contenido: rgba(255,255,255,.2);
+	--color-fondo-def: #CEBAAE;
+	--color-blanco: #FFFFFF;
+	--color-grisaceo: #FEF7EA;
+	--color-verde: #007F6B;
+	--color-azul: #30599F;
+	--color-negro: #000000;
+	--color-sombras: #757575;
+	--color-linea-titulo: #DDDDDD;
+	--color-linea-borde: #8a8a8a;
+	--color-naranja: #C55A07;
+	--color-menu-seleccion: #FFAC11;
+	--color-cabecera-tabla: #FEBC57;
+	--color-tabla-seleccion: #FFF59D;
+	--tamanio-titulo1: 32px;
+	--tamanio-titulo2: 25px;
+	--tamanio-texto: 20px;
+}
+
+
+
+/* ################# Cuerpo ################# */
+body{
+	background: var(--color-fondo-def);
+	background-image: url("../imagenes/bg.png");
+	background-repeat: repeat;
+}
+
+div.contenido{
+	background: var(--color-contenido); 
+}
+
+
+
+/* ################# Header ################# */
+header h1{
+	text-shadow: 1px 1px 5px var(--color-blanco);
+}
+
+header nav{
+	border-radius: 10px 10px 0px 0px;
+	text-align: center;
+	background: var(--color-negro);
+	text-transform: uppercase;
+	box-shadow: 0px 3px var(--color-sombras);
+}
+
+header nav ul li{
+	border-bottom: solid 1px var(--color-blanco);
+	text-shadow: 1px 1px 5px var(--color-negro);
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color: var(--color-blanco);
+}
+
+header nav ul li a:hover{
+	background: var(--color-naranja);
+}
+
+
+
+/* ################# Cuerpo (articulos y secciones) ################# */
+article{
+	box-shadow: 2px 3px var(--color-sombras);
+	border-radius: 10px;
+	background-color: var(--color-blanco);
+	border: 1px solid var(--color-linea-borde);
+}
+
+
+
+/* ################# Elementos de texto ################# */
+@font-face{
+	font-family: titulos1;
+	src: url("../fuentes/propiacav.ttf");
+}
+
+nav a, h1, h2, footer, aside, div.descarga{
+	font-family: titulos1;
+}
+
+div.escritorio{
+	text-align: center;
+}
+
+p{
+	font-size: var(--tamanio-texto);
+}
+
+h1{
+	font-size: var(--tamanio-titulo1);
+}
+
+h2, h3{
+	font-size: var(--tamanio-titulo2);
+}
+
+section h2{
+	text-align: center;
+	border-radius: 20px;
+	background-color: var(--color-grisaceo);
+	color: var(--color-negro);
+	border: 2px solid var(--color-negro);
+	text-transform: uppercase;
+	box-shadow: 2px 3px var(--color-sombras);
+}
+
+h2.btn_contraer_juegos, h2.btn_contraer_app{
+	background-color: var(--color-tabla-seleccion)
+}
+
+h2.btn_contraer_juegos:hover, h2.btn_contraer_app:hover{
+	background-color: var(--color-cabecera-tabla)
+}
+
+section h2 span{
+	font-size: 18px;
+}
+
+article h3{
+	border-bottom: 1px solid var(--color-linea-titulo);
+}
+
+article p{
+	text-align: justify;
+}
+
+
+
+/* ################# Tabla ################# */
+table th{
+	background-color: var(--color-cabecera-tabla);
+	color: var(--color-negro);
+}
+
+table, th, td {
+	font-size: var(--tamanio-texto);
+	border: 2px solid var(--color-sombras);
+	border-collapse: collapse;
+}
+
+tr:hover{
+	background-color: var(--color-tabla-seleccion);
+}
+
+.fecha{
+	text-align: center;
+}
+
+#seleccion{
+	border-bottom: solid 1px var(--color-menu-seleccion);
+}
+
+#seleccion a{
+	color: var(--color-menu-seleccion);
+}
+
+
+
+/* ################# Articulo especial ################# */
+div.caratula img, div.caratula2 img{
+	border: solid 1px var(--color-linea-borde);
+	border-radius: 10px;
+	box-shadow: 1px 1px var(--color-negro);
+}
+
+div.caratula p{
+	color: var(--color-blanco);
+	text-shadow: 2px 2px 5px var(--color-negro);
+}
+
+div.descripcion h3, div.descripcion2 h3{
+	border: none;
+}
+
+div.descarga a{
+	background-color: var(--color-verde);
+	color: var(--color-blanco);
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+
+	border-radius: 10px;
+	text-shadow: 2px 2px 10px var(--color-negro);
+	box-shadow: 0px 3px var(--color-negro);
+}
+
+div.descarga a.play_store{
+	background-color: var(--color-azul);
+}
+
+div.descarga a:hover{
+	background-color: var(--color-naranja);
+	box-shadow: none;
+}
+
+
+
+/* ################# Pie de la pagina ################# */
+footer{
+	text-align: center;
+	color: var(--color-blanco);
+	background-color: var(--color-negro);
+	box-shadow: 0px 3px var(--color-sombras);
+	border-radius: 0px 0px 10px 10px;
+}

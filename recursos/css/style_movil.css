@@ -1,0 +1,50 @@
+/* ------------------------------------------------------
+				Estilos CSS Movil
+------------------------------------------------------ */
+
+/* ¡IMPORTANTE! Si se cambia de aqui el tamanio cambialo en el otro CSS tambien */
+@media screen and (max-width:1300px){
+/* ################# Propiedades CSS ################# */
+:root{
+	--color-blanco: #FFFFFF;
+	--color-negro: #000000;
+	--color-lineas-menu: #424242;
+	--color-linea-barra-sup: rgba(255,255,255, .3);
+	--color-contenido: rgba(255,255,255, .3);
+}
+
+
+
+/* ################# Cuerpo ################# */
+body{
+	background-image: url("../imagenes/bgs.png");
+}
+
+
+
+/* ################# Header ################# */
+header nav{
+	text-align: left;
+}
+
+header nav ul li{
+	border-bottom: solid 1px var(--color-lineas-menu);
+}
+
+div.menu_bar{
+	border-bottom: 1px solid var(--color-linea-barra-sup);
+}
+
+div.menu_bar .bt-menu{
+	background-color: var(--color-negro);
+	color: var(--color-blanco);
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 23px;
+}
+
+div.menu_bar span{
+	font-size: 27px;
+}
+	
+} /* Fin hoja movil */

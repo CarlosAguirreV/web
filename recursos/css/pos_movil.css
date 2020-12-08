@@ -1,0 +1,110 @@
+/* ------------------------------------------------------
+				Posicionamiento CSS Movil
+------------------------------------------------------ */
+
+/* ¡IMPORTANTE! Si se cambia de aqui el tamanio cambialo en el otro CSS tambien */
+@media screen and (max-width:1300px){
+/* ################# Elementos generales ################# */
+.escritorio, footer{
+	display: none;
+}
+
+.movil{
+	display: block;
+}
+
+
+
+/* ################# Cuerpo ################# */
+body{
+	width: 100%;
+}
+
+
+
+/* ################# Header ################# */
+header nav{
+	position: fixed;
+	overflow: scroll;
+	width: 80%;
+	height: 100%;
+	left: -100%;
+	margin: 0;
+	z-index: 1;
+}
+
+header nav ul{
+	display: block;
+	margin-top: 58px;
+}
+
+header nav ul li{
+	display: block;
+	float: none;
+	margin-left: 0px;
+}
+
+header nav ul li a{
+	padding: 20px;
+}
+
+div.menu_bar{
+	display: block;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+}
+
+div.menu_bar .bt-menu{
+	display: block;
+	padding: 15px;
+}
+
+div.menu_bar span{
+	float: right;
+}
+
+
+
+/* ################# Cuerpo (articulos y secciones) ################# */
+section.primera_seccion{
+	margin-top: 53px;
+}
+
+article, section h2{
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+
+
+/* ################# Articulo especial ################# */
+
+div.descripcion, div.caratula, div.caratula2, div.descarga{
+	float: none;
+	display: block;
+	width: 100%;
+}
+
+div.descripcion{
+	margin-left: 0px;
+}
+
+div.caratula, div.caratula2{
+	max-width: 500px;
+	margin:auto;
+}
+
+div.caratula2{
+	max-width: 128px;
+}
+
+div.descripcion h3, div.descripcion2 h3{
+	margin-top: 7px;
+}
+
+div.descarga{
+	margin-top: 10px;
+}
+
+} /* Fin hoja movil */
