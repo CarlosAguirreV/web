@@ -26,6 +26,7 @@ header nav ul li{
 
 div.menu_bar{
 	border-bottom: 1px solid var(--color-linea-barra-sup);
+	vertical-align: center;
 }
 
 div.menu_bar .bt-menu{
@@ -33,11 +34,11 @@ div.menu_bar .bt-menu{
 	color: var(--color-blanco);
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 23px;
+	font-size: 20px;
 }
 
 div.menu_bar span{
-	font-size: 27px;
+	font-size: 25px;
 }
 	
 } /* Fin hoja movil */
