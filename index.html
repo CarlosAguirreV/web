@@ -3,19 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>La Web de Carlos Aguirre</title>
-	<link rel="icon" type="image/ico" href="recursos/imagenes/logo2.png"/>
+	<link rel="icon" type="image/ico" href="recursos/imagenes/logo3.png"/>
 	<link rel="stylesheet" href="recursos/css/pos_generico.css">
 	<link rel="stylesheet" href="recursos/css/style_generico.css">
 	<link rel="stylesheet" href="recursos/css/pos_movil.css">
 	<link rel="stylesheet" href="recursos/css/style_movil.css">
 	<link rel="stylesheet" href="recursos/css/iconos.css">
 	<meta name="viewport" content="width=device-width">
+	<script src="recursos/javascript/jquery.js"></script>
+	<script src="recursos/javascript/controlador.js"></script>
 </head>
 <body>
 	<div class="contenido">
 		<header>
 			<div class="escritorio">
-				<img id="logo" src="recursos/imagenes/logo1.png" alt="logo" class="escritorio">
+				<img class="logo escritorio" src="recursos/imagenes/logo1.png" alt="logo">
 				<h1>La Web de Carlos Aguirre</h1>
 			</div>
 			
@@ -27,7 +29,7 @@
 				<ul>
 					<li id="seleccion"><a href="#"><span class="icon-home"></span>Inicio</a></li>
 					<li><a href="videojuegos.html"><span class="icon-pacman"></span>Videojuegos</a></li>
-					<li><a href="#"><span class="icon-lab"></span>Aplicaciones</a></li>
+					<li><a href="aplicaciones.html"><span class="icon-lab"></span>Aplicaciones</a></li>
 					<li><a href="#"><span class="icon-box-add"></span>Recursos</a></li>
 					<li><a href="#"><span class="icon-user"></span>Acerca de</a></li>
 					<li><a href="https://ko-fi.com/carlosaguirrev"><span class="icon-mug"></span>Donativo</a></li>
@@ -40,7 +42,7 @@
 				<h2>- Inicio -</h2>
 				
 				<article>
-					<img class="movil" src="recursos/imagenes/logo1.png" alt="logo">
+					<img class="movil logo" src="recursos/imagenes/logo1.png" alt="logo">
 					<h3><span class="icon-wink"></span> ¡Bienvenid@!</h3>
 					<p>En esta página compartiré mis proyectos, verás como avanzan. Una vez terminados adjuntaré el link de descarga, también compartiré recursos útiles para desarrolladores y usuarios.</p>
 					<p>La idea principal es ir creciendo día a día hasta llegar a lo más alto.</p>
@@ -48,20 +50,36 @@
 				</article>
 				
 				<article>
+					<h3><span class="icon-rocket"></span> Proyectos en marcha</h3>
+					<p>En este momento estoy trabajando en varios proyectos, entre ellos:</p>
+					<ul>
+						<li>La <b>página Web</b> (esta).</li>
+						<li>La segunda parte de una aplicación para gestionar proyectos llamada "<b>Proyta Fx</b>".</li>
+						<li>El videojuego "<b>El pasillo fantasmal</b>" que estará disponible para Android y Windows en paises de habla Iglesa y Española. Soportará el uso de mando de videojuego.</li>
+						<li>La aplicación cuyo <del>nombre</del> no desvelaré de momento, la cual contiene información de los distintos árboles. De momento solo disponible para una ciudad.</li>
+						<li>La fuente de texto "<b>ExcentiaCAV</b>".</li>
+					</ul>
+				</article>
+				
+				<article>
 					<h3><span class="icon-newspaper"></span> Tablón de novedades</h3>
-					<p>Aquí puedes ver las novedades de mis proyectos. Así puedes seguirlos.</p>
+					<p>Aquí puedes ver las novedades de mis proyectos.</p>
 					<table>
 						<tr>
 							<th>Fecha</th>
 							<th>Novedad</th>
 						</tr>
 						<tr>
+							<td class="fecha">10-12-2020</td>
+							<td>Se ha añadido la página de aplicaciones. Esta contiene las aplicaciones que hago y una lista de otras que recomiendo.</td>
+						</tr>
+						<tr>
 							<td class="fecha">08-12-2020</td>
-							<td>Se ha mejorado el diseño, CSS más limpio. Página videojuegos creada.</td>
+							<td>Se ha mejorado el diseño de la Web, CSS más limpio. Página videojuegos creada.</td>
 						</tr>
 						<tr>
 							<td class="fecha">29-11-2020</td>
-							<td>Se ha creado el tablón de novedades para la página web y además se ha mejorado un poco el diseño.</td>
+							<td>Se ha creado el <em>tablón de novedades</em> para la página web y además se ha mejorado un poco el diseño.</td>
 						</tr>
 					</table>
 				</article>
@@ -72,9 +90,6 @@
 		<footer>
 			<p>¡Gracias por tu visita!</p>
 		</footer>
-		
-		<script src="recursos/javascript/jquery.js"></script>
-		<script src="recursos/javascript/controlador.js"></script>
 	</div>
 </body>
 </html>

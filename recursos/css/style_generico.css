@@ -8,8 +8,11 @@
 	--color-fondo-def: #CEBAAE;
 	--color-blanco: #FFFFFF;
 	--color-grisaceo: #FEF7EA;
+	--color-grisaceo2: #424242;
 	--color-verde: #007F6B;
+	--color-verde-claro: #A5D6A7;
 	--color-azul: #30599F;
+	--color-azul-claro: #29B6F6;
 	--color-negro: #000000;
 	--color-sombras: #757575;
 	--color-linea-titulo: #DDDDDD;
@@ -20,6 +23,7 @@
 	--color-tabla-seleccion: #FFF59D;
 	--tamanio-titulo1: 32px;
 	--tamanio-titulo2: 25px;
+	--tamanio-titulo3: 20px;
 	--tamanio-texto: 20px;
 }
 
@@ -27,9 +31,9 @@
 
 /* ################# Cuerpo ################# */
 body{
-	background: var(--color-fondo-def);
-	background-image: url("../imagenes/bg.png");
+	/* El fondo y color de la web varia en funcion de la estacion, esto se controla desde "controlador.js". */
 	background-repeat: repeat;
+	background-color: var(--color-fondo-def);
 }
 
 div.contenido{
@@ -91,7 +95,7 @@ div.escritorio{
 	text-align: center;
 }
 
-p{
+p, article ul{
 	font-size: var(--tamanio-texto);
 }
 
@@ -101,6 +105,11 @@ h1{
 
 h2, h3{
 	font-size: var(--tamanio-titulo2);
+}
+
+h4{
+	font-size: var(--tamanio-titulo2);
+	margin-top: 10px;
 }
 
 section h2{
@@ -113,11 +122,11 @@ section h2{
 	box-shadow: 2px 3px var(--color-sombras);
 }
 
-h2.btn_contraer_juegos, h2.btn_contraer_app{
+h2.btn_contraer_pc, h2.btn_contraer_app{
 	background-color: var(--color-tabla-seleccion)
 }
 
-h2.btn_contraer_juegos:hover, h2.btn_contraer_app:hover{
+h2.btn_contraer_pc:hover, h2.btn_contraer_app:hover{
 	background-color: var(--color-cabecera-tabla)
 }
 
@@ -129,8 +138,26 @@ article h3{
 	border-bottom: 1px solid var(--color-linea-titulo);
 }
 
-article p{
+article p, article ul{
 	text-align: justify;
+}
+
+article ul{
+	margin-top: 5px;
+	padding-left: 10px;
+	list-style-type: square;
+	list-style-image: url(../imagenes/list.png);
+	list-style-position: inside;
+}
+
+article li{
+	margin-top: 2px;
+}
+
+article li a{
+	text-decoration: none;
+	color: var(--color-azul);
+	font-weight: bold;
 }
 
 
@@ -187,14 +214,20 @@ div.descarga a{
 	text-decoration: none;
 	text-align: center;
 	font-size: 20px;
-
 	border-radius: 10px;
-	text-shadow: 2px 2px 10px var(--color-negro);
+	text-shadow: 2px 2px 10px var(--color-verde-claro);
 	box-shadow: 0px 3px var(--color-negro);
 }
 
 div.descarga a.play_store{
 	background-color: var(--color-azul);
+	text-shadow: 1px 1px 7px var(--color-azul-claro);
+}
+
+div.descarga a.sourceforge{
+	background-color: var(--color-grisaceo2);
+	color: var(--color-menu-seleccion);
+	text-shadow: 2px 2px 10px var(--color-naranja);
 }
 
 div.descarga a:hover{

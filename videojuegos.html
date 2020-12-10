@@ -3,19 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>La Web de Carlos Aguirre</title>
-	<link rel="icon" type="image/ico" href="recursos/imagenes/logo2.png"/>
+	<link rel="icon" type="image/ico" href="recursos/imagenes/logo3.png"/>
 	<link rel="stylesheet" href="recursos/css/pos_generico.css">
 	<link rel="stylesheet" href="recursos/css/style_generico.css">
 	<link rel="stylesheet" href="recursos/css/pos_movil.css">
 	<link rel="stylesheet" href="recursos/css/style_movil.css">
 	<link rel="stylesheet" href="recursos/css/iconos.css">
 	<meta name="viewport" content="width=device-width">
+	<script src="recursos/javascript/jquery.js"></script>
+	<script src="recursos/javascript/controlador.js"></script>
 </head>
 <body>
 	<div class="contenido">
 		<header>
 			<div class="escritorio">
-				<img id="logo" src="recursos/imagenes/logo1.png" alt="logo" class="escritorio">
+				<img class="logo escritorio" src="recursos/imagenes/logo1.png" alt="logo">
 				<h1>La Web de Carlos Aguirre</h1>
 			</div>
 			
@@ -27,7 +29,7 @@
 				<ul>
 					<li><a href="index.html"><span class="icon-home"></span>Inicio</a></li>
 					<li id="seleccion"><a href="#"><span class="icon-pacman"></span>Videojuegos</a></li>
-					<li><a href="#"><span class="icon-lab"></span>Aplicaciones</a></li>
+					<li><a href="aplicaciones.html"><span class="icon-lab"></span>Aplicaciones</a></li>
 					<li><a href="#"><span class="icon-box-add"></span>Recursos</a></li>
 					<li><a href="#"><span class="icon-user"></span>Acerca de</a></li>
 					<li><a href="https://ko-fi.com/carlosaguirrev"><span class="icon-mug"></span>Donativo</a></li>
@@ -48,8 +50,8 @@
 			</section>
 			
 			<section>
-				<h2 class="btn_contraer_juegos">PC <span class="icon-circle-up"></span></h2>
-				<div class="contractor_juegos">
+				<h2 class="btn_contraer_pc">PC <span class="icon-circle-up"></span></h2>
+				<div class="contractor_pc">
 					<article class="especial">
 						<div class="caratula">
 							<img src="recursos/imagenes/img_tanke.png" alt="caratula">
@@ -233,11 +235,8 @@
 		</div>
 		
 		<footer>
-			<p>¡Gracias por tu visita! Recuerda, los videojuegos están bien, pero hacer ejercicio y comer sano también.</p>
+			<p>Recuerda, jugar a videojuegos está bien, pero hacer ejercicio y comer sano también.</p>
 		</footer>
-		
-		<script src="recursos/javascript/jquery.js"></script>
-		<script src="recursos/javascript/controlador.js"></script>
 	</div>
 </body>
 </html>
