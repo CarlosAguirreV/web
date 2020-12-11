@@ -80,13 +80,13 @@ article, section h2{
 
 /* ################# Articulo especial ################# */
 
-div.descripcion, div.caratula, div.caratula2, div.descarga{
+div.descripcion, div.descripcion2, div.caratula, div.caratula2, div.descarga{
 	float: none;
 	display: block;
 	width: 100%;
 }
 
-div.descripcion{
+div.descripcion, div.descripcion2{
 	margin-left: 0px;
 }
 
