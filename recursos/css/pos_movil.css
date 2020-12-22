@@ -71,6 +71,10 @@ section.primera_seccion{
 	margin-top: 53px;
 }
 
+div.cuerpo{
+	padding: 7px;
+}
+
 article, section h2{
 	margin: auto;
 	margin-bottom: 10px;
