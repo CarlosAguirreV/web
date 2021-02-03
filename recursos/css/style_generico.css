@@ -158,7 +158,7 @@ article li{
 	margin-top: 2px;
 }
 
-article li a, .link{
+.link, article a{
 	text-decoration: none;
 	color: var(--color-azul);
 	font-weight: bold;
