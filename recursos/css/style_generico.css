@@ -11,6 +11,7 @@
 	--color-grisaceo2: #424242;
 	--color-verde: #007F6B;
 	--color-verde-claro: #A5D6A7;
+	--color-magenta: #D81B60;
 	--color-azul: #30599F;
 	--color-azul-claro: #29B6F6;
 	--color-negro: #000000;
@@ -89,12 +90,7 @@ article{
 	src: url("../fuentes/propiacav.ttf");
 }
 
-.letra-peque{
-	margin-top: 10px;
-	font-size: var(--tamanio-texto-peque);
-}
-
-nav a, h1, h2, footer, aside, div.descarga{
+nav a, h1, h2, footer, aside, div.descarga, p.texto-instagram > a{
 	font-family: titulos1;
 }
 
@@ -105,6 +101,21 @@ div.escritorio{
 p, article ul{
 	font-size: var(--tamanio-texto);
 }
+
+.letra-peque{
+	margin-top: 10px;
+	font-size: var(--tamanio-texto-peque);
+}
+
+p.texto-instagram{
+	text-align: right;
+}
+
+p.texto-instagram > a{
+	font-size: var(--tamanio-titulo1);
+	color: var(--color-magenta);
+}
+
 
 h1{
 	font-size: var(--tamanio-titulo1);
