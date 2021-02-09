@@ -7,6 +7,7 @@
 	--color-contenido: rgba(255,255,255,.2);
 	--color-fondo-def: #CEBAAE;
 	--color-blanco: #FAFAFA;
+	--color-grisaceo-claro: #EEEEEE;
 	--color-grisaceo: #FEF7EA;
 	--color-grisaceo2: #424242;
 	--color-verde: #007F6B;
@@ -72,6 +73,26 @@ header nav ul li a:hover{
 }
 
 
+progress {
+  background: transparent;
+  border: none;
+}
+
+progress {
+  color: var(--color-menu-seleccion);
+}
+
+progress::-moz-progress-bar {
+  background: var(--color-menu-seleccion);
+}
+
+progress::-webkit-progress-value {
+  background: var(--color-menu-seleccion);
+}
+
+progress::-webkit-progress-bar {
+  background: transparent;
+}
 
 
 /* ################# Cuerpo (articulos y secciones) ################# */
@@ -80,6 +101,39 @@ article{
 	border-radius: 10px;
 	background-color: var(--color-blanco);
 	box-shadow: 2px 3px var(--color-sombras);
+}
+
+.btn-ver-qr{
+	background-color: var(--color-grisaceo-claro);
+	color: var(--color-negro);
+	text-align: center;
+	cursor: pointer;
+	width: 20%;
+	margin: auto;
+	border-radius: 50px;
+	border: 1px dashed  var(--color-linea-borde);
+	box-shadow: 2px 3px var(--color-linea-borde);
+	
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.img-qr{
+	display: none;
+	margin-top: 10px;
+}
+
+.btn-arriba{
+	background-color: var(--color-menu-seleccion);
+	color: var(--color-blanco);
+	cursor: pointer;
+	border-radius: 50px;
+	opacity: 0.6;
+	border: 1px solid var(--color-blanco);
+}
+
+.btn-arriba:hover{
+	opacity: 0.9;
 }
 
 
@@ -145,11 +199,12 @@ section h2{
 }
 
 h2.btn_contraer_pc, h2.btn_contraer_app{
-	background-color: var(--color-tabla-seleccion)
+	background-color: var(--color-tabla-seleccion);
+	cursor: pointer;
 }
 
 h2.btn_contraer_pc:hover, h2.btn_contraer_app:hover{
-	background-color: var(--color-cabecera-tabla)
+	background-color: var(--color-cabecera-tabla);
 }
 
 section h2 span{
@@ -194,6 +249,10 @@ table, th, td {
 	font-size: var(--tamanio-texto);
 	border: 2px solid var(--color-sombras);
 	border-collapse: collapse;
+}
+
+tr{
+	cursor: pointer;
 }
 
 tr:hover{

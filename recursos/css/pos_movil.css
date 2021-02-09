@@ -55,6 +55,11 @@ div.menu_bar{
 	z-index: 2;
 }
 
+.progreso-lectura{
+	margin-top:51px;
+	width: 100%;
+}
+
 div.menu_bar .bt-menu{
 	display: block;
 	padding: 15px;

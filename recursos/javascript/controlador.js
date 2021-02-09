@@ -2,6 +2,7 @@ $(document).ready(main);
 
 // ################## CAMPOS ##################
 var contador = true;
+var contraerQR = false;
 var contraerJuegos = true;
 var contraerApp = true;
 
@@ -11,6 +12,7 @@ function main(){
 	// Al cargar la pagina cambiara el fondo en funcion de la estacion del anio.
 	$(document).ready(function(){
 		setFondoSegunEstacion();
+		actualizarElementosScroll();
 	});
 	
 	//Evitar el uso del menú contextual (clic derecho).
@@ -38,6 +40,21 @@ function main(){
 	})
 	.mouseleave(function(){
 		$(".logo").attr("src","recursos/imagenes/logo1.png");
+	});
+	
+	// Mostrar u ocultar QR.
+	$('.btn-ver-qr').click(function(){
+		if(contraerQR){
+			contraerQR = false;
+			$('.img-qr').css("display", "none");
+			$(".btn-ver-qr").removeClass("icon-eye-blocked");
+			$(".btn-ver-qr").addClass("icon-eye");
+		} else {
+			contraerQR = true;
+			$('.img-qr').css("display", "block");
+			$(".btn-ver-qr").removeClass("icon-eye");
+			$(".btn-ver-qr").addClass("icon-eye-blocked");
+		}
 	});
 	
 	// Contraer o expandir juegos.
@@ -69,6 +86,18 @@ function main(){
 		}
 	});
 	
+	// Boton subir arriba.
+	$('.btn-arriba').click(function(){
+		$('body, html').animate({
+			scrollTop: '0px'
+		}, 300);
+	});
+	
+	// Al bajar el Scroll.
+	$(window).scroll(function(){
+		actualizarElementosScroll();
+	});
+	
 	
 	
 	// ################## FUNCIONES ##################
@@ -96,6 +125,27 @@ function main(){
 		}else{
 			$("body").css("background","#aeabb1");
 			$("body").css('background-image','url("recursos/imagenes/bg_invierno.png")');
+		}
+	}
+	
+	function refrescarBarraLectura(){
+		var pxAlto = $(document).height();
+		var posicionScroll = $(window).height() + $(this).scrollTop();
+		var total = pxAlto - $(window).height();
+		var porcentaje = 100 - (((pxAlto - posicionScroll) * 100) / total);
+		
+		$('progress').attr("value", porcentaje);
+	}
+	
+	// Hacer aparecer y desaparecer el boton de subir arriba y la barra de progreso.
+	function actualizarElementosScroll(){
+		if($(this).scrollTop() > 0){
+			$('.btn-arriba').fadeIn(300);
+			$('.progreso-lectura').fadeIn(100);
+			refrescarBarraLectura();
+		}else{
+			$('.btn-arriba').fadeOut(300);
+			$('.progreso-lectura').fadeOut(100);
 		}
 	}
 	
