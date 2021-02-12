@@ -10,6 +10,7 @@
 	--color-grisaceo-claro: #EEEEEE;
 	--color-grisaceo: #FEF7EA;
 	--color-grisaceo2: #424242;
+	--color-grisaceo3: #DADADA;
 	--color-verde: #007F6B;
 	--color-verde-claro: #A5D6A7;
 	--color-magenta: #D81B60;
@@ -23,11 +24,15 @@
 	--color-menu-seleccion: #FFAC11;
 	--color-cabecera-tabla: #FEBC57;
 	--color-tabla-seleccion: #FFF59D;
+	--color-h2-principal: #FED4B9;
+	--color-h2-secundario: #FEEAC3;
+	--color-celda-par: #FFFDE7;
+	--color-celda-impar: #FFF3E0;
 	--tamanio-titulo1: 32px;
 	--tamanio-titulo2: 25px;
-	--tamanio-titulo3: 20px;
 	--tamanio-texto: 20px;
-	--tamanio-texto-peque: 14px;
+	--tamanio-texto-fecha: 20px;
+	--tamanio-texto-peque: 16px;
 }
 
 
@@ -98,7 +103,7 @@ progress::-webkit-progress-bar {
 /* ################# Cuerpo (articulos y secciones) ################# */
 article{
 	border: 1px solid var(--color-linea-borde);
-	border-radius: 10px;
+	border-radius: 20px 10px 30px 10px;
 	background-color: var(--color-blanco);
 	box-shadow: 2px 3px var(--color-sombras);
 }
@@ -191,7 +196,7 @@ h4{
 section h2{
 	text-align: center;
 	border-radius: 20px;
-	background-color: var(--color-grisaceo);
+	background-color: var(--color-h2-principal);
 	color: var(--color-negro);
 	border: 2px solid var(--color-negro);
 	text-transform: uppercase;
@@ -199,7 +204,7 @@ section h2{
 }
 
 h2.btn_contraer_pc, h2.btn_contraer_app{
-	background-color: var(--color-tabla-seleccion);
+	background-color: var(--color-h2-secundario);
 	cursor: pointer;
 }
 
@@ -247,20 +252,19 @@ table th{
 
 table, th, td {
 	font-size: var(--tamanio-texto);
-	border: 2px solid var(--color-sombras);
+	border: 2px solid var(--color-grisaceo3);
 	border-collapse: collapse;
 }
 
-tr{
-	cursor: pointer;
-}
-
-tr:hover{
-	background-color: var(--color-tabla-seleccion);
-}
+tr{cursor: pointer;}
+tr:nth-child(even){background-color: var(--color-celda-par);}
+tr:nth-child(odd){background-color: var(--color-celda-impar);}
+tr:hover{background-color: var(--color-tabla-seleccion);}
 
 .fecha{
 	text-align: center;
+	font-weight: bold;
+	font-size: var(--tamanio-texto-peque);
 }
 
 #seleccion{

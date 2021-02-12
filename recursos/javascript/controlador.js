@@ -1,7 +1,7 @@
 $(document).ready(main);
 
 // ################## CAMPOS ##################
-var contador = true;
+var menuContraido = true;
 var contraerQR = false;
 var contraerJuegos = true;
 var contraerApp = true;
@@ -13,6 +13,13 @@ function main(){
 	$(document).ready(function(){
 		setFondoSegunEstacion();
 		actualizarElementosScroll();
+		
+		// Pedir que la imagen QR se muestre en bloque y se oculte.
+		$('.img-qr').css("display", "block").hide();
+		
+		// Animacion al cargar.
+		$('.cuerpo').hide();
+		$('.cuerpo').fadeIn(300);
 	});
 	
 	//Evitar el uso del menú contextual (clic derecho).
@@ -20,18 +27,25 @@ function main(){
 	
 	// Para ver u ocultar el menu en modo movil.
 	$('.menu_bar').click(function(){
-		if(contador){
-			contador = false;
-			$('nav').animate({
-				left: '0'
-			});
+		if(menuContraido){
+			menuContraido = false;
+			mostrarMenuMovil(true);
+			
 		} else {
-			contador = true;
-			$('nav').animate({
-				left: '-100%'
-			});
+			menuContraido = true;
+			mostrarMenuMovil(false);
 		}
 	});
+	
+	// Si el menu esta desplegado y se pulsa en alguna parte del cuerpo, cerrara el menu.
+	$('.cuerpo').click(function(){
+		if(!menuContraido){
+			menuContraido = true;
+			mostrarMenuMovil(false);
+		}
+	});
+	
+	
 	
 	// Cambia la opacidad del logo si se pasa el raton por encima.
 	$('.logo')
@@ -46,12 +60,13 @@ function main(){
 	$('.btn-ver-qr').click(function(){
 		if(contraerQR){
 			contraerQR = false;
-			$('.img-qr').css("display", "none");
+			$('.img-qr').slideUp(200);
 			$(".btn-ver-qr").removeClass("icon-eye-blocked");
 			$(".btn-ver-qr").addClass("icon-eye");
 		} else {
 			contraerQR = true;
-			$('.img-qr').css("display", "block");
+			
+			$('.img-qr').slideDown(200);
 			$(".btn-ver-qr").removeClass("icon-eye");
 			$(".btn-ver-qr").addClass("icon-eye-blocked");
 		}
@@ -146,6 +161,28 @@ function main(){
 		}else{
 			$('.btn-arriba').fadeOut(300);
 			$('.progreso-lectura').fadeOut(100);
+		}
+	}
+	
+	// Mostrar u ocultar el menu.
+	function mostrarMenuMovil(mostrar){
+		if(mostrar){
+			$('nav').animate({
+				left: '0'
+			});
+			$(".bt-menu span").hide();
+			$(".bt-menu span").removeClass("icon-menu");
+			$(".bt-menu span").addClass("icon-arrow-left2");
+			$(".bt-menu span").fadeIn(200);
+		}
+		else{
+			$('nav').animate({
+				left: '-100%'
+			});
+			$(".bt-menu span").hide()
+			$(".bt-menu span").removeClass("icon-arrow-left2");
+			$(".bt-menu span").addClass("icon-menu");
+			$(".bt-menu span").fadeIn(200);
 		}
 	}
 	

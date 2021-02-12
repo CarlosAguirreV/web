@@ -82,6 +82,9 @@
 .icon-arrow-up2:before {
   content: "\ea3a";
 }
+.icon-arrow-left2:before {
+  content: "\ea40";
+}
 .icon-circle-up:before {
   content: "\ea41";
 }

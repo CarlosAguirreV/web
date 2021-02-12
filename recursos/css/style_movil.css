@@ -11,6 +11,7 @@
 	--color-lineas-menu: #424242;
 	--color-linea-barra-sup: rgba(255,255,255, .3);
 	--color-contenido: rgba(255,255,255, .3);
+	--color-negro-transparente: rgba(0,0,0, .9);
 }
 
 
@@ -18,6 +19,7 @@
 /* ################# Header ################# */
 header nav{
 	text-align: left;
+	background-color: var(--color-negro-transparente);
 }
 
 header nav ul li{
