@@ -5,6 +5,7 @@
 /* ################# Propiedades CSS ################# */
 :root{
 	--color-contenido: rgba(255,255,255,.3);
+	--color-negro-alfa: rgba(150,150,150,.3);
 	--color-fondo-def: #CEBAAE;
 	--color-blanco: #FAFAFA;
 	--color-grisaceo-claro: #EEEEEE;
@@ -51,8 +52,12 @@ div.contenido{
 
 
 /* ################# Header ################# */
+header{
+	background: var(--color-negro-alfa);
+}
+
 header h1, header h3{
-	text-shadow: 2px 2px 3px var(--color-blanco);
+	text-shadow: 0px 0px 15px var(--color-celda-par);
 }
 
 header nav{
