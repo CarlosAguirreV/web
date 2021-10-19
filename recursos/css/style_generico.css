@@ -151,7 +151,7 @@ article{
 /* ################# Elementos de texto ################# */
 @font-face{
 	font-family: titulos1;
-	src: url("../fuentes/propiacav.ttf");
+	src: url("../fuentes/PatrickHand-Regular.ttf");
 }
 
 nav a, h1, h2, footer, aside, div.descarga, p.texto-instagram > a{
@@ -245,6 +245,20 @@ article li{
 	text-decoration: none;
 	color: var(--color-azul);
 	font-weight: bold;
+}
+
+span.pildora{
+	text-decoration: none;
+	font-weight: bold;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: var(--color-azul);
+	border-radius: 15px;
+	color: var(--color-blanco);
+	font-size: 12px;
+	vertical-align: top;
 }
 
 
