@@ -94,6 +94,14 @@ article{
 	z-index: 5;
 }
 
+span.icono_resaltado{
+	margin-left: -16px;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 14px;
+	padding-bottom: 7px;
+}
+
 
 
 /* ################# Elementos de texto ################# */
