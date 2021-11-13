@@ -1,4 +1,4 @@
-# Pagina Web
+# Página Web
 Página estática en la que publico los avances de mis proyectos.</br>
 Héchale un ojo, no tiene desperdicio.</br>
 Si te parece poca cosa, dame tiempo, todo cambiará a su debido momento.
