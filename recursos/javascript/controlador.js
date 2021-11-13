@@ -72,6 +72,11 @@ function main(){
 		}
 	});
 	
+	// Boton volver (politica de privacidad).
+	$('.btn-volver').click(function(){
+		window.history.back();
+	});
+	
 	// Contraer o expandir juegos.
 	$('.btn_contraer_pc').click(function(){
 		if(contraerJuegos){
