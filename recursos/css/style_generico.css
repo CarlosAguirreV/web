@@ -7,32 +7,30 @@
 	--color-contenido: rgba(255,255,255,.3);
 	--color-negro-alfa: rgba(150,150,150,.3);
 	--color-fondo-def: #CEBAAE;
-	--color-blanco: #FAFAFA;
-	--color-grisaceo-claro: #EEEEEE;
+	--color-blanco: #FFFFFF;
+	--color-grisaceo-claro: #E6E6E6;
 	--color-grisaceo2: #424242;
 	--color-grisaceo3: #DADADA;
-	--color-verde: #007F6B;
-	--color-verde-claro: #A5D6A7;
-	--color-magenta: #D81B60;
+	--color-verde: #008365;
 	--color-azul: #30599F;
-	--color-azul-claro: #29B6F6;
+	--color-magenta: #D81B60;
 	--color-negro: #000000;
 	--color-sombras: #757575;
 	--color-linea-titulo: #DDDDDD;
-	--color-linea-borde: #8a8a8a;
+	--color-linea-borde: #b2b2b2;
 	--color-naranja: #C55A07;
 	--color-menu-seleccion: #FFAC11;
 	--color-cabecera-tabla: #FEBC57;
-	--color-tabla-seleccion: #FFF59D;
 	--color-h2-principal: #FED4B9;
 	--color-h2-secundario: #FEEAC3;
 	--color-celda-par: #FFFDE7;
 	--color-celda-impar: #FFF3E0;
+	--color-texto-lectura: #555555;
+	--color-texto-link: #2e64af;
 	--tamanio-titulo1: 32px;
-	--tamanio-titulo2: 25px;
-	--tamanio-texto: 20px;
-	--tamanio-texto-fecha: 20px;
-	--tamanio-texto-peque: 16px;
+	--tamanio-titulo2: 21px;
+	--tamanio-texto: 17px;
+	--tamanio-texto-peque: 15px;
 }
 
 
@@ -55,21 +53,19 @@ header{
 	background: var(--color-negro-alfa);
 }
 
-header h1, header h3{
+header h1, header h2{
 	text-shadow: 0px 0px 15px var(--color-celda-par);
 }
 
+header h3{
+	color: var(--color-blanco);
+	text-shadow: 0px 0px 15px var(--color-negro);
+}
+
 header nav{
-	border-radius: 10px 10px 0px 0px;
 	text-align: center;
 	background: var(--color-negro);
 	text-transform: uppercase;
-	box-shadow: 0px 3px var(--color-sombras);
-}
-
-header nav ul li{
-	border-bottom: solid 1px var(--color-blanco);
-	text-shadow: 1px 1px 5px var(--color-negro);
 }
 
 header nav ul li a{
@@ -106,7 +102,6 @@ progress::-webkit-progress-bar {
 
 /* ################# Cuerpo (articulos y secciones) ################# */
 article{
-	border: 1px solid var(--color-linea-borde);
 	border-radius: 20px 10px 30px 10px;
 	background-color: var(--color-blanco);
 	box-shadow: 2px 3px var(--color-sombras);
@@ -120,16 +115,15 @@ article{
 	width: 20%;
 	margin: auto;
 	border-radius: 50px;
-	border: 1px dashed  var(--color-linea-borde);
 	box-shadow: 2px 3px var(--color-linea-borde);
 	
+	/* En pos_generico no funciona */
 	padding: 5px;
 	margin-top: 10px;
 }
 
 .img-qr{
 	display: none;
-	margin-top: 10px;
 }
 
 .btn-arriba{
@@ -138,7 +132,6 @@ article{
 	cursor: pointer;
 	border-radius: 50px;
 	opacity: 0.6;
-	border: 1px solid var(--color-blanco);
 }
 
 .btn-arriba:hover{
@@ -146,9 +139,8 @@ article{
 }
 
 span.icono_resaltado{
-	background-color: var(--color-celda-impar);
+	background-color: var(--color-h2-principal);
 	border-radius: 50px 150px 100px 0px;
-	border: 1px solid var(--color-linea-borde);
 	box-shadow: 0px 3px 2px var(--color-grisaceo2);
 }
 
@@ -160,6 +152,11 @@ span.icono_resaltado{
 	src: url("../fuentes/PatrickHand-Regular.ttf");
 }
 
+@font-face{
+	font-family: texto;
+	src: url("../fuentes/Roboto-Regular.ttf");
+}
+
 nav a, h1, h2, footer, aside, div.descarga, p.texto-instagram > a{
 	font-family: titulos1;
 }
@@ -168,8 +165,13 @@ div.escritorio{
 	text-align: center;
 }
 
-p, article ul{
+p, table, ul, h3{
+	font-family: texto;
 	font-size: var(--tamanio-texto);
+}
+
+p, table, ul, img{
+	color: var(--color-texto-lectura);
 }
 
 .letra-peque{
@@ -185,7 +187,6 @@ p.texto-instagram > a{
 	font-size: var(--tamanio-titulo1);
 	color: var(--color-magenta);
 }
-
 
 h1{
 	font-size: var(--tamanio-titulo1);
@@ -209,7 +210,6 @@ section h2{
 	border-radius: 20px;
 	background-color: var(--color-h2-principal);
 	color: var(--color-negro);
-	border: 2px solid var(--color-negro);
 	text-transform: uppercase;
 	box-shadow: 2px 3px var(--color-sombras);
 }
@@ -249,7 +249,7 @@ article li{
 
 .link, article a{
 	text-decoration: none;
-	color: var(--color-azul);
+	color: var(--color-texto-link);
 	font-weight: bold;
 }
 
@@ -276,14 +276,14 @@ table th{
 
 table, th, td {
 	font-size: var(--tamanio-texto);
-	border: 2px solid var(--color-grisaceo3);
+	border: 2px solid var(--color-blanco);
 	border-collapse: collapse;
 }
 
 tr{cursor: pointer;}
 tr:nth-child(even){background-color: var(--color-celda-par);}
 tr:nth-child(odd){background-color: var(--color-celda-impar);}
-tr:hover{background-color: var(--color-tabla-seleccion);}
+tr:hover{background-color: var(--color-cabecera-tabla);}
 
 .fecha{
 	text-align: center;
@@ -303,7 +303,6 @@ tr:hover{background-color: var(--color-tabla-seleccion);}
 
 /* ################# Articulo especial ################# */
 div.caratula img, div.caratula2 img{
-	border: solid 1px var(--color-linea-borde);
 	border-radius: 10px;
 	box-shadow: 1px 1px 2px var(--color-negro);
 }
@@ -324,19 +323,16 @@ div.descarga a{
 	text-align: center;
 	font-size: 20px;
 	border-radius: 10px;
-	text-shadow: 2px 2px 10px var(--color-verde-claro);
 	box-shadow: 0px 3px 2px var(--color-grisaceo2);
 }
 
 div.descarga a.play_store{
 	background-color: var(--color-azul);
-	text-shadow: 1px 1px 7px var(--color-azul-claro);
 }
 
 div.descarga a.sourceforge{
 	background-color: var(--color-grisaceo2);
 	color: var(--color-menu-seleccion);
-	text-shadow: 2px 2px 10px var(--color-naranja);
 }
 
 div.descarga a:hover{
@@ -350,8 +346,9 @@ div.descarga a:hover{
 /* ################# Pie de la pagina ################# */
 footer{
 	text-align: center;
-	color: var(--color-blanco);
 	background-color: var(--color-negro);
-	box-shadow: 0px 3px var(--color-sombras);
-	border-radius: 0px 0px 10px 10px;
+}
+
+footer p{
+	color: var(--color-blanco);
 }
