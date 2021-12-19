@@ -29,6 +29,11 @@ body{
 	margin-top: 10px;
 }
 
+.logo{
+	width: 256px;
+	height: 128px;
+}
+
 
 /* ################# Header ################# */
 header{
