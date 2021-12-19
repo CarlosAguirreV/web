@@ -46,7 +46,7 @@ function main(){
 	
 	
 	
-	// Cambia la opacidad del logo si se pasa el raton por encima.
+	// Cambia el logo al pasar el mouse por encima.
 	$('.logo')
 	.mouseenter(function(){
 		$(".logo").attr("src","recursos/imagenes/logo2.png");

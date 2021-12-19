@@ -17,6 +17,12 @@
 
 
 /* ################# Header ################# */
+div.imagenes_link > a > abbr > img{
+	width: 30%;
+	max-width: 128px;
+	opacity: 1;
+}
+
 header nav{
 	text-align: left;
 	background-color: var(--color-negro-transparente);
