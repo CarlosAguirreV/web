@@ -8,7 +8,7 @@
 	padding: 0;
 }
 
-.menu_bar, .movil{
+.menu_bar, .movil, div.caratula_articulo.movil{
 	display: none;
 }
 
@@ -140,19 +140,19 @@ article.especial h3{
 	margin-bottom: 2px;
 }
 
-div.caratula{
+div.caratula_pc{
 	width: 17%;
 	position: relative;
 	display: inline-block;
 }
 
-div.caratula img{
+div.caratula_pc img{
 	width: 100%;
 	height: 100%;
 	margin-bottom: 0px;
 }
 
-div.caratula p{
+div.caratula_pc p{
 	padding: 3px;
 	position: absolute;
 	bottom: 3px;
@@ -160,14 +160,26 @@ div.caratula p{
 }
 
 
-
-div.caratula2{
+div.caratula_app{
 	width: 8%;
 	position: relative;
 	display: inline-block;
 }
 
-div.caratula2 img{
+div.caratula_app img{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0px;
+}
+
+
+div.caratula_articulo{
+	width: 15%;
+	position: relative;
+	display: inline-block;
+}
+
+div.caratula_articulo img{
 	width: 100%;
 	height: 100%;
 	margin-bottom: 0px;
@@ -175,7 +187,7 @@ div.caratula2 img{
 
 
 
-div.descripcion, div.descripcion2{
+div.descripcion_pc, div.descripcion_app, div.descripcion_articulo{
 	vertical-align: top;
 	height: 100%;
 	width: 63%;
@@ -183,11 +195,16 @@ div.descripcion, div.descripcion2{
 	display: inline-block;
 }
 
-div.descripcion2{
+div.descripcion_app{
 	width: 72%;
 }
 
-div.descripcion h3, div.descripcion2 h3{
+div.descripcion_articulo{
+	margin-left: 0%;
+	width: 80%;
+}
+
+div.descripcion_pc h3, div.descripcion_app h3{
 	padding: 0px;
 }
 

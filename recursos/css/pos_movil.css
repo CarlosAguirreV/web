@@ -5,7 +5,7 @@
 /* ¡IMPORTANTE! Si se cambia de aqui el tamanio cambialo en el otro CSS tambien */
 @media screen and (max-width:1300px){
 /* ################# Elementos generales ################# */
-.escritorio, footer{
+.escritorio, div.caratula_articulo.escritorio, footer{
 	display: none;
 }
 
@@ -13,6 +13,9 @@
 	display: block;
 }
 
+.no_en_movil{
+	display: none;
+}
 
 
 /* ################# Cuerpo ################# */
@@ -89,26 +92,30 @@ article, section h2{
 
 /* ################# Articulo especial ################# */
 
-div.descripcion, div.descripcion2, div.caratula, div.caratula2, div.descarga{
+div.descripcion_pc, div.descripcion_app, div.descripcion_articulo, div.caratula_pc, div.caratula_app, div.caratula_articulo.movil, div.descarga{
 	float: none;
 	display: block;
 	width: 100%;
 }
 
-div.descripcion, div.descripcion2{
+div.descripcion_pc, div.descripcion_app, div.descripcion_articulo{
 	margin-left: 0px;
 }
 
-div.caratula, div.caratula2{
+div.caratula_pc, div.caratula_app, div.caratula_articulo.movil{
 	max-width: 500px;
 	margin:auto;
 }
 
-div.caratula2{
+div.caratula_app{
 	max-width: 128px;
 }
 
-div.descripcion h3, div.descripcion2 h3{
+div.caratula_articulo.movil{
+	max-width: 200px;
+}
+
+div.descripcion_pc h3, div.descripcion_app h3{
 	margin-top: 7px;
 }
 

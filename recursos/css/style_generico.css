@@ -59,7 +59,7 @@ header h1, header h2{
 
 header h3{
 	color: var(--color-blanco);
-	text-shadow: 0px 0px 15px var(--color-negro);
+	text-shadow: 0px 0px 15px var(--color-negro);	
 }
 
 header nav{
@@ -302,17 +302,17 @@ tr:hover{background-color: var(--color-cabecera-tabla);}
 
 
 /* ################# Articulo especial ################# */
-div.caratula img, div.caratula2 img{
+div.caratula_pc img, div.caratula_app img{
 	border-radius: 10px;
 	box-shadow: 1px 1px 2px var(--color-negro);
 }
 
-div.caratula p{
+div.caratula_pc p{
 	color: var(--color-blanco);
 	text-shadow: 2px 2px 5px var(--color-negro);
 }
 
-div.descripcion h3, div.descripcion2 h3{
+div.descripcion_pc h3, div.descripcion_app h3{
 	border: none;
 }
 

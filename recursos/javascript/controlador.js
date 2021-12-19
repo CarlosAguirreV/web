@@ -7,7 +7,6 @@ var contraerJuegos = true;
 var contraerApp = true;
 
 function main(){
-	
 	// ################## EVENTOS ##################
 	// Al cargar la pagina cambiara el fondo en funcion de la estacion del anio.
 	$(document).ready(function(){
