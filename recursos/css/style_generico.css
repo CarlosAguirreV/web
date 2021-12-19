@@ -137,6 +137,10 @@ article{
 	margin-top: 10px;
 }
 
+.btn-ver-qr:hover{
+	background-color: var(--color-grisaceo3);
+}
+
 .img-qr{
 	display: none;
 }
@@ -271,6 +275,10 @@ article li{
 	text-decoration: none;
 	color: var(--color-texto-link);
 	font-weight: bold;
+}
+
+.link, article a:hover{
+	color: var(--color-naranja);
 }
 
 span.pildora{
