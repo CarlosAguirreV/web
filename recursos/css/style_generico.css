@@ -271,13 +271,13 @@ article li{
 	margin-top: 2px;
 }
 
-.link, article a{
+article a{
 	text-decoration: none;
 	color: var(--color-texto-link);
 	font-weight: bold;
 }
 
-.link, article a:hover{
+article a:hover{
 	color: var(--color-naranja);
 }
 
