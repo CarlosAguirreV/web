@@ -53,7 +53,7 @@ div.imagenes_link{
 div.imagenes_link > a > abbr > img{
 	display: inline-block;
 	width: 128px;
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 div.imagenes_link > a > abbr > img:hover{
