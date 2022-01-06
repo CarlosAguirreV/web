@@ -4,5 +4,4 @@ Héchale un ojo, no tiene desperdicio.
 
 ## 🖇️ Link a la Web
 Ahora mismo solo estas viendo el contenido del archivo _README.md_, no la página Web en sí.</br>
-Hace poco he cambiado la web de sitio, ahora puedes visitarla en:
-[Haz click aquí](https://lunevix.com/) para ir a la nueva web.
+Hace poco he cambiado la web de sitio, ahora puedes visitarla en [lunevix.com](https://lunevix.com/)
